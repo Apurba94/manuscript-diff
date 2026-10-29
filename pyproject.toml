@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "manuscript-diff"
+version = "0.1.0"
+description = "Word-level diff between manuscript drafts rendered to HTML or Markdown for co-authors."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "JANIN A APURBA", email = "japurba97@gmail.com"}]
+keywords = ["research", "automation", "reproducibility", "academic"]
+dependencies = []
+
+[project.scripts]
+manuscript-diff = "manuscript_diff.cli:main"
+
+[tool.setuptools]
+packages = ["manuscript_diff"]
